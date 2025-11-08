@@ -1,33 +1,46 @@
-Strangers Video Calling App is a real-time video chat application that connects users randomly for live video calls. The app includes a unique credit-based system where users spend coins for each video call. Users can earn more coins by watching ads, ensuring continuous engagement and monetization.
+# 🎥 Strangers Video Calling App
 
-Features:-
+A **real-time video chat application** that connects users randomly for live one-on-one video calls.  
+The app features a **coin-based credit system** that encourages continuous engagement, allowing users to earn coins by watching ads and spend them during video calls.
 
-Real-Time Video Calling: Connect instantly with random users for seamless video calls.
+---
 
-Coin-Based System: Each video call deducts a set number of coins from the user's balance.
+## 🚀 Features
 
-Earn Coins: Users can watch ads to earn free coins and continue making calls.
+- 🔹 **Real-Time Video Calling:** Instantly connect with random users using **WebRTC** for smooth peer-to-peer video sessions.  
+- 🔹 **Coin-Based System:** Each call deducts a fixed number of coins from the user's wallet to manage engagement.  
+- 🔹 **Earn Coins by Watching Ads:** Integrated **Google AdMob** for rewarded ads to let users earn more coins.  
+- 🔹 **Secure & Anonymous:** Maintains user privacy with secure **Firebase Authentication** and anonymous connections.  
+- 🔹 **Engaging UI/UX:** Built with **Android XML layouts** for a responsive, intuitive experience.
 
-Smooth UI/UX: Designed for an intuitive and engaging experience.
+---
 
-Secure & Anonymous: Ensures user privacy while chatting with strangers.
+## ⚙️ How It Works
 
-How It Works:-
+1. **Start a Call:** Launch the app and get matched with a random online user.  
+2. **Spend Coins:** Each active video call deducts coins from the user’s balance.  
+3. **Earn More Coins:** Watch ads via **AdMob** to earn free coins and continue chatting.  
+4. **Enjoy Conversations:** Meet new people and enjoy seamless, real-time video interactions.
 
-Start a Video Call: Open the app and get matched with a random user.
+---
 
-Spend Coins: Every call consumes a fixed amount of coins from your balance.
+## 🛠️ Tech Stack
 
-Earn More Coins: Watch ads to get free coins and extend your calling experience.
+| Layer | Technology |
+|--------|-------------|
+| **Frontend** | Android (Java, XML) |
+| **Backend** | Firebase + WebRTC |
+| **Database** | Firestore |
+| **Monetization** | Google AdMob |
+| **Authentication** | Firebase Auth |
 
-Enjoy Conversations: Meet new people and engage in real-time video chats.
+---
 
-Technologies Used:-
+## 🧩 Architecture Overview
 
-Frontend: XML (Android) 
-
-Backend: Firebase / WebRTC
-
-Monetization: Google AdMob 
-
-Database: Firestore 
+```mermaid
+flowchart TD
+    A["User 1"] -->|"Connect via WebRTC"| B["Signaling Server (Firebase)"]
+    B --> C["User 2"]
+    A --> D["Firestore Database"]
+    C --> D
