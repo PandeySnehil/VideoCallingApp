@@ -38,9 +38,7 @@ The app features a **coin-based credit system** that encourages continuous engag
 
 ## 🧩 Architecture Overview
 
-```mermaid
-flowchart TD
-    A["User 1"] -->|"Connect via WebRTC"| B["Signaling Server (Firebase)"]
-    B --> C["User 2"]
-    A --> D["Firestore Database"]
-    C --> D
+<p align="center">
+  <img src="assets/architecture.png" alt="Architecture Diagram" width="600">
+</p>
+
